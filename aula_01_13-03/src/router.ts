@@ -55,8 +55,6 @@ router.post('/contato', function (req, res) {
 
     const checkValidate = isValidateObjectRequest(req, inputs);
 
-    console.log(checkValidate);
-
     if (Array.isArray(checkValidate)) {
         ok = false;
 
